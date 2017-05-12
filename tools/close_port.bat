@@ -1,23 +1,21 @@
 @echo off 
-title å…³é—­å¸¸è§çš„å±é™©ç«¯å£ 
-echo æ­£åœ¨å¯åŠ¨é˜²ç«å¢™ è¯·ç¨å€™â€¦ 
-sc config SharedAccess start= auto > nul A
+color 1f 
+title ¹Ø±Õ³£¼ûµÄÎ£ÏÕ¶Ë¿Ú 
+echo ÕýÔÚÆô¶¯·À»ðÇ½ ÇëÉÔºò¡­ 
+sc config SharedAccess start= auto > nul 
 net start SharedAccess > nul 
-echo é˜²ç«å¢™å·²ç»æˆåŠŸå¯åŠ¨ 
-echo. 
-echo æ­£åœ¨å…³é—­å¸¸è§çš„å±é™©ç«¯å£ è¯·ç¨å€™â€¦ 
-echo. 
-echo æ­£åœ¨å…³é—­135ç«¯å£ è¯·ç¨å€™â€¦ 
+echo ·À»ðÇ½ÒÑ¾­³É¹¦Æô¶¯ 
+echo ÕýÔÚ¹Ø±Õ³£¼ûµÄÎ£ÏÕ¶Ë¿Ú ÇëÉÔºò¡­ 
+echo ÕýÔÚ¹Ø±Õ135¶Ë¿Ú ÇëÉÔºò¡­ 
 netsh firewall set portopening protocol = ALL port = 135 name = 135 mode = DISABLE scope = ALL profile = ALL 
-echo æ­£åœ¨å…³é—­137ç«¯å£ è¯·ç¨å€™â€¦ 
+echo ÕýÔÚ¹Ø±Õ137¶Ë¿Ú ÇëÉÔºò¡­ 
 netsh firewall set portopening protocol = ALL port = 137 name = 137 mode = DISABLE scope = ALL profile = ALL 
-echo æ­£åœ¨å…³é—­138ç«¯å£ è¯·ç¨å€™â€¦ 
+echo ÕýÔÚ¹Ø±Õ138¶Ë¿Ú ÇëÉÔºò¡­ 
 netsh firewall set portopening protocol = ALL port = 138 name = 138 mode = DISABLE scope = ALL profile = ALL 
-echo æ­£åœ¨å…³é—­139ç«¯å£ è¯·ç¨å€™â€¦ 
+echo ÕýÔÚ¹Ø±Õ139¶Ë¿Ú ÇëÉÔºò¡­ 
 netsh firewall set portopening protocol = ALL port = 139 name = 139 mode = DISABLE scope = ALL profile = ALL 
-echo æ­£åœ¨å…³é—­445ç«¯å£ è¯·ç¨å€™â€¦ 
+echo ÕýÔÚ¹Ø±Õ445¶Ë¿Ú ÇëÉÔºò¡­ 
 netsh firewall set portopening protocol = ALL port = 445 name = 445 mode = DISABLE scope = ALL profile = ALL 
-echo å¸¸è§çš„å±é™©ç«¯å£å·²ç»å…³é—­ 
-echo. 
-echo æŒ‰ä»»æ„é”®é€€å‡º 
+echo ³£¼ûµÄÎ£ÏÕ¶Ë¿ÚÒÑ¾­¹Ø±Õ  
+echo °´ÈÎÒâ¼üÍË³ö 
 pause>nul 
